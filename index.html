@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/8203961616.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./style/style.css">
+
+		<title>EdVisto</title>
+	</head>
+
+	<body>
+		<main class="container">
+
+            <nav>
+                <img src="./public/images/EdVisto.png">
+                    <ul class="menu">
+                        <li><a class="fa fa-home">   Inicio</a></li>
+                        <br>
+                        <li><a class="fa fa-briefcase">   Proyectos</a></li>
+                        <br>
+                        <li><a class="fa fa-users">   Estudiantes</a></li>
+                            <div class="profile">
+                                <br>
+                                <li><a class="fa fa-user" type="text">  Perfil de Usuario</a></li>
+                                <br>
+                                <a>Contacto</a>
+                                <a>Idioma</a> 
+                            </div>
+                    </ul>
+            </nav>
+
+            <div class="information" >
+                
+                <input class="Titulo" id="form-control" type="text" required minlength="1" maxlength="140" placeholder="Titulo del Proyecto">
+                <br>
+
+                <p class="fas fa-link">   Link Video</p>
+                 <input class="video" id="form-control" type="text" required minlength="140" maxlength="30"> 
+
+                    <div class="save">
+                        <br>
+                        <input class="button" type="button" value="Cargar Video">
+                    </div>
+
+                <p>Descripción</p>
+                <input class="description" id="form-control" type="text" required minlength="1" maxlength="300">
+
+                <p>Lider del Proyecto</p>
+                <input id="form-control" type="name" required minlength="1" maxlength="50" required placeholder="Nombre Completo del Proyecto">
+                
+                <p>Correo Eletronico</p>
+                <input id="form-control" type="email" placeholder="Correo del Lider del Proyecto">
+                <br>
+                    <div class="save">
+                        <br>
+                        <input class="button" type="button" value="Guardar">
+
+                    </div>
+                
+            </div>
+
+		</main>
+
+		<!--script src="./public/js/app.js"></script-->
+
+	</body>
+
+	<footer>
+		<p>&copy; 2023</p>
+	</footer>
+
+</html>
