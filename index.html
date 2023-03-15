@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
 		<link rel="preconnect" href="https://fonts.gstatic.com">
         
         <!-- Bootstrap -->
@@ -11,9 +12,9 @@
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/8203961616.js" crossorigin="anonymous"></script>
-        
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./style/style.css">
 
@@ -26,14 +27,15 @@
             <nav>
                 <img src="./public/images/EdVisto.png">
                     <ul class="menu">
-                        <li><a class="fa fa-home">   Inicio</a></li>
+                        <li><a class="fas fa-home"></a>   Inicio</li>
                         <br>
-                        <li><a class="fa fa-briefcase">   Proyectos</a></li>
+                        <li><a class="fas fa-briefcase"></a>   Proyectos</li>
                         <br>
-                        <li><a class="fa fa-users">   Estudiantes</a></li>
+                        <li><i class="fas fa-users"></i>   Estudiantes</li>
+                        
                             <div class="profile">
                                 <br>
-                                <li><a class="fa fa-user" type="text">  Perfil de Usuario</a></li>
+                                <li><i class="fas fa-user" type="text"></i>  Perfil de Usuario</li>
                                 <br>
                                 <a>Contacto</a>
                                 <a>Idioma</a> 
@@ -45,13 +47,14 @@
                 
                 <input class="Titulo" id="form-control" type="text" required minlength="1" maxlength="140" placeholder="Titulo del Proyecto">
                 <br>
-
-                <p class="fas fa-link">   Link Video</p>
-                 <input class="video" id="form-control" type="text" required minlength="140" maxlength="30"> 
-
-                    <div class="save">
+                    <div class="upload-btn-wrapper col-lg-4 col-xl-4 mb-4">
+                        <button class="fas fa-link btn-upload"> </button>
                         <br>
-                        <input class="button" type="button" value="Cargar Video">
+                        <video width="400" id="video{{$i}}" controls autoplay muted class="preview-video">
+                        <source src="" id="video_here">
+                        Your browser does not support HTML5 video.
+                        </video>
+                        <input type="file" name="video[]" id="video-input{{$i}}" onchange="loadfileVideo('video-input{{$i}}', 'video{{$i}}')" accept=".mp4, .mkv, .mov">
                     </div>
 
                 <p>Descripción</p>
@@ -68,17 +71,16 @@
                         <input class="button" type="button" value="Guardar">
 
                     </div>
-                
             </div>
 
 		</main>
 
-		<!--script src="./public/js/app.js"></script-->
+		<script src="./public/js/app.js"></script>
 
 	</body>
 
 	<footer>
-		<p>&copy; 2023</p>
+		<p class="footer">&copy; EdVisto 2023</p>
 	</footer>
 
 </html>

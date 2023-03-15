@@ -14,7 +14,7 @@
     color:white;
     line-height: 10px;
     width: 400px;
-    height: 570px;
+    height: 500px;
     background-color: rgb(51, 72, 93); 
   }
   
@@ -23,7 +23,7 @@
   }
 
   li{
-    display:block;
+    display: block;
     padding:20px 15px;
     margin-left: 0px;
     margin-top: 0px;
@@ -55,6 +55,7 @@
     color:#13c9c9;
     background: rgba(255,255,255,0.1);
   }
+
     /*Descripcion*/
 
   input {
@@ -80,32 +81,78 @@
   }
 
   .Titulo {
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
     font-weight: bold;
   }
 
-  .video {
-    background-color: rgba(210,238,226);
-    border: 0px;
-  }
+  /*Descripcion Boton*/
 
- /*Descripcion Boton*/
   .button {
     color: white;
     display: block;
-    width: 15%;
     background-color:  rgb(94, 175, 142);
     cursor:pointer;
     font-weight: bold;
     border: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    left: 910px;
   }
 
-  .save{
-    height: 50px;
-    left: 880px;
+  /*video*/
+
+  .upload-btn-wrapper {
     position: relative;
-    width: 900px;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn-upload {
+    border: 0px;
+    background-color: white;
+    font-size: 15px;
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 90px;
+    margin-left: 60px;
+  }
+  
+  .upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  .preview-video {
+    width: 1010px;
+    height: 300px;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+  .footer {
+    margin-left: 700px;
+  }
+  
+  /*responsive*/
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
   }
 
 
