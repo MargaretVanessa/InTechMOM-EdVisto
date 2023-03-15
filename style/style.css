@@ -13,9 +13,9 @@
     color:white;
     line-height: 10px;
     width: 400px;
-    height: 300px;
+    height: 319gitpx;
     background-color: rgb(51, 72, 93); 
-    margin-top: 190px;
+    margin-top: 200px;
   }
   
   img{
@@ -42,9 +42,10 @@
   .profile{
     box-sizing:border-box;
     background-color: rgb(51, 72, 93);
-    height: 370px;
+    height: 260px;
     position: static;
-    top: 200px;
+    margin-top: 130px;
+    
   }
 
   .profile a:hover, .activado{
