@@ -10,26 +10,26 @@
 
   /*Lista Menu izq*/
   .menu{
-    position: absolute;
     color:white;
     line-height: 10px;
     width: 400px;
-    height: 500px;
+    height: 300px;
     background-color: rgb(51, 72, 93); 
+    margin-top: 190px;
   }
   
   img{
+    position: absolute;
     width: 400px;
+    height: 200px;
   }
 
   li{
     display: block;
     padding:20px 15px;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 130px;
+    margin-right: 100px;
     box-sizing:border-box;
-    text-align: center;
-
   }
 
   .menu li:hover, .activado{
@@ -40,20 +40,29 @@
   /*boton perfil*/
   
   .profile{
-    margin-left: auto;
-    margin-top: 0px;
     box-sizing:border-box;
     background-color: rgb(51, 72, 93);
-    text-align: center;
-    height: 150px;
-    left: 0;
-    position: relative;
+    height: 370px;
+    position: static;
     top: 200px;
   }
 
   .profile a:hover, .activado{
     color:#13c9c9;
     background: rgba(255,255,255,0.1);
+  }
+
+  .setting{
+    color: white;
+    display: block;
+    background-color: rgb(51, 72, 93);
+    cursor:pointer;
+    font-weight: bold;
+    border: none;
+    width: 100px;
+    height: 30px;
+    left: 910px;
+
   }
 
     /*Descripcion*/
@@ -138,7 +147,7 @@
   }
 
   .footer {
-    margin-left: 700px;
+    margin-left: 890px;
   }
   
   /*responsive*/
