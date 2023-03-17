@@ -4,17 +4,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-        
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
-        
+		<!--link rel="preconnect" href="https://fonts.gstatic.com"-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+             
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/8203961616.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+        
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./style/style.css">
 
@@ -28,19 +25,15 @@
                 
                     <ul class="menu">
                         <li><a class="fas fa-home"></a>   Inicio</li>
-                        <br>
-                        <li><a class="fas fa-briefcase"></a>   Proyectos</li>
-                        <br>
-                        <li><a class="fas fa-users"></a>   Estudiantes</li>
+                        
+                        <li><a class="fa fa-briefcase"></a>   Proyectos</li>
+                        
+                        <li><a class="fa fa-users"></a>   Estudiantes</li>
                         
                             <div class="profile">
-                                <br>
-                                <li><i class="fas fa-user" type="text"></i>  Perfil de Usuario</li>
-                                <br>
-                                <input class="setting" type="button" value="Contacto">
-                                <input class="setting" type="button" value="Idioma">
-                                <!--a>Contacto</a-->
-                                <!--a>Idioma</a--> 
+                                <button class="button1" style="font-size:24px"><i class="material-icons">account_circle</i>   Perfil de Usuario </button>
+                                <button class="button2" type="button" value="Contacto">Contacto</button>
+                                <button class="button3" type="button" value="Idioma">Idioma</button>
                             </div>
                     </ul>
             </nav>
@@ -51,7 +44,6 @@
                 <br>
                     <div class="upload-btn-wrapper col-lg-4 col-xl-4 mb-4">
                         <button class="fas fa-link btn-upload"> </button>
-                        <br>
                         <video width="400" id="video{{$i}}" controls autoplay muted class="preview-video">
                         <source src="" id="video_here">
                         Your browser does not support HTML5 video.
@@ -67,11 +59,9 @@
                 
                 <p>Correo Eletronico</p>
                 <input id="form-control" type="email" placeholder="Correo del Lider del Proyecto">
-                <br>
+                
                     <div class="save">
-                        <br>
                         <input class="button" type="button" value="Guardar">
-
                     </div>
             </div>
 
